@@ -1,0 +1,33 @@
+<!-- <div fxLayout="column" fxLayoutAlign="center center" > -->
+    <form [formGroup]="loginForm" fxLayoutAlign="center center"  (ngSubmit)="submit()">
+        <div
+          fxLayout="column"
+          fxLayoutAlign="space-between center"
+          fxLayoutGap="20px"
+        >
+          <h1 class="h3 mb-3 fw-normal">Log In</h1>
+          <div>
+            <input
+              formControlName="email"
+              type="email"
+              class="form-control"
+              placeholder="name@example.com"
+              required
+            />
+          </div>
+          <div>
+            <input
+              formControlName="password"
+              type="password"
+              class="form-control"
+              placeholder="Password"
+              required
+            />
+          </div>
+          <div  class="example-button-row">
+            <button  mat-button type="submit" color="primary">Submit</button>
+            <button mat-button color="warn">Cancel</button>
+          </div>
+        </div>
+      </form>
+    <!-- </div> -->
